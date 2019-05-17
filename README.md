@@ -1,3 +1,5 @@
+#####   npm install
+
 ######  install Webpack
 #####   npm install --global webpack
 #####   npm install --save-dev webpack
@@ -21,3 +23,12 @@
 
 ######  install CleanWebpackPlugin
 #####   npm install --save-dev clean-webpack-plugin
+
+######  watch file change && live reloading
+#####   npm install --save-dev webpack-dev-server
+
+######  watch file change && live reloading !dont use with "clean-webpack-plugin"
+#####   npm install --save-dev webpack-dev-server
+
+######  npm install --save-dev express webpack-dev-middleware
+#####   npm install --save-dev express webpack-dev-middleware

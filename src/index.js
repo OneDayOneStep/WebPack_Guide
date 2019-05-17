@@ -1,9 +1,9 @@
 import _ from "lodash";
 
 //管理资源
-import "./style.css"; //引入样式
-import Logo from "./images/Webpack.png"; //引入图片文件
-import XmlData from "./data.xml"; //引入xml文件
+import "./style.css";
+import Logo from "./images/Webpack.png";
+import XmlData from "./data.xml";
 
 //管理输出
 import printMe from "./print.js";
