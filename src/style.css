@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Ball";
+    src: url("fonts/Ball-Pen-Regular.woff") format("woff");
+    font-style: normal;
+}
+html, body{
+    height:100%;padding:0;margin:0;
+}
+* {
+    font-family: "Microsoft JhengHei UI Light";
+}
+.styleCss{
+    color:#2278c0;font-size:40px;text-shadow:0 0 6px #8ed6fc;
+    background-image:url("images/Webpack.png");
+    background-repeat:no-repeat;padding-left:130px;
+    font-family: "Ball";
+}
