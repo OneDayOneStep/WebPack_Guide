@@ -30,5 +30,5 @@
 ######  watch file change && live reloading !dont use with "clean-webpack-plugin"
 #####   npm install --save-dev webpack-dev-server
 
-######  npm install --save-dev express webpack-dev-middleware
+######  express create server , get webpack && config to express middleware
 #####   npm install --save-dev express webpack-dev-middleware

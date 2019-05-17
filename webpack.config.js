@@ -1,6 +1,7 @@
 const path = require("path"); //用于解析路径
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //用于清理dist目录
+const webpack = require('webpack');
 
 module.exports = {
     plugins: [
@@ -8,12 +9,14 @@ module.exports = {
         new HtmlWebpackPlugin({ //将会生产一个新的.html文件 如果不指定filename默认为index.html
             title:  'WP Learning',
             filename: 'Webpack.html'
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     // entry: './src/index.js', //用于打包的入口文件
     entry: {
-        diyName: "./src/index.js",
-        print: "./src/print.js"
+        // diyName: "./src/index.js",
+        // print: "./src/print.js"
+        app: "./src/index.js"
     },
     output: {
         // filename: 'main.js', // 打包生成的文件名
@@ -30,6 +33,7 @@ module.exports = {
         //设置 devServer 监听的路径
         //注意：不要和plugins - CleanWebpackPlugin同时使用
         contentBase: "./dist",
+        hot: true,
         openPage: 'Webpack.html'
     },
     module: {
